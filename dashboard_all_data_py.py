@@ -64,8 +64,6 @@ min_date = all_df["order_purchase_timestamp"].min()
 max_date = all_df["order_purchase_timestamp"].max()
 
 with st.sidebar:
-    # Menambahkan logo perusahaan
-    st.image("https://github.com/monicasalwaa/Proyek_Akhir/blob/main/dashboard/toko_online.png")
 
     # Mengambil start_date & end_date dari date_input
     start_date, end_date = st.date_input(
