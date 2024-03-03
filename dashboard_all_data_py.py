@@ -48,7 +48,7 @@ def create_rfm_df(df):
 
     return rfm_df
 
-all_df=pd.read_csv("all_data.csv")
+all_df=pd.read_csv("https://raw.githubusercontent.com/monicasalwaa/Proyek_Akhir/main/dashboard/all_data.csv")
 
 datetime_columns = ["shipping_limit_date", "order_purchase_timestamp",	"order_approved_at",	"order_delivered_carrier_date", "order_delivered_customer_date",	"order_estimated_delivery_date"]
 
