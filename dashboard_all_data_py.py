@@ -91,7 +91,7 @@ st.subheader('Top Price Products in All You Need Store')
 
 
 fig = plt.figure(figsize=(35, 15))
-colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
+colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 sns.barplot(x="top_price", y="product_category_name", data=byprice_df.sort_values(by="top_price", ascending=False).head(10),
     palette=colors
 )
@@ -106,7 +106,7 @@ st.pyplot(fig)
 st.subheader('Customer Demographics')
 
 fig = plt.figure(figsize=(35, 15))
-colors_ = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
+colors_ = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 sns.barplot(x="customer_count", y="customer_state", data=bystate_df.sort_values(by="customer_count", ascending=False).head(10),
     palette=colors_
 )
@@ -121,7 +121,7 @@ st.pyplot(fig)
 st.subheader('Top Product Categories by Number of Sale')
 
 fig = plt.figure(figsize=(35, 15))
-colors_ = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
+colors_ = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 sns.barplot(x="order_count", y="product_category_name", data=byproduct_df.sort_values(by="order_count", ascending=False).head(10),
     palette=colors_
 )
